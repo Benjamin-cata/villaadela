@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Villa Adela - Concordia</title>
+  <style>
+    :root{
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --accent: #e6f0ff;
+      --blue: #0066cc;
+      --text: #222;
+      --muted: #666;
+      --container-padding: 4%;
+    }
+    *{box-sizing: border-box}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+    header{
+      background: linear-gradient(180deg, var(--accent), #ffffff);
+      padding: 34px var(--container-padding);
+      text-align:center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    header h1{ margin:0; font-size:2.1rem; color:#034e7b;}
+    header p{ margin:6px 0 0; color:var(--muted); }
+
+    main{ max-width:1000px; margin: 28px auto; padding: 0 var(--container-padding); }
+
+    .card{
+      background: var(--card);
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom:18px;
+      box-shadow: 0 6px 18px rgba(12,40,80,0.04);
+      border: 1px solid rgba(0,0,0,0.03);
+    }
+
+    .section-head{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:10px;
+    }
+    .dot{
+      width:12px; height:12px; border-radius:50%;
+      background: linear-gradient(180deg,#0077dd,#004f9e);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    h2{ margin:0; color:var(--blue); font-size:1.25rem; }
+    p{ color: #2b2b2b; line-height:1.6; font-size:1rem; margin: 10px 0 0; }
+
+    .foto{
+      display:block;
+      width:100%;
+      max-width:820px;
+      height:auto;
+      margin:14px auto 0;
+      border-radius:10px;
+      object-fit:cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+
+    footer{
+      text-align:center;
+      padding:18px 8px;
+      color:var(--muted);
+      font-size:0.9rem;
+      margin-top:12px;
+    }
+
+    .creadores {
+      background-color: #e6f0ff;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 40px;
+      border-top: 1px solid #ccd9f2;
+    }
+
+    .creadores h3 {
+      color: #004080;
+      margin: 0 0 8px 0;
+    }
+
+    .creadores p {
+      margin: 0;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    @media (max-width:600px){
+      header h1{ font-size:1.5rem; }
+      .card{ padding:16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Villa Adela — Concordia</h1>
+    <p>Un rincón entrerriano: historia, comunidad y paisaje</p>
+  </header>
+
+  <main>
+    <article class="card">
+      <div class="section-head">
+        <div class="dot" aria-hidden="true"></div>
+        <h2>Villa Adela (introducción)</h2>
+      </div>
+      <p>
+        Villa Adela es un barrio y zona rural de la ciudad de Concordia, en la provincia de Entre Ríos.
+        Se encuentra a pocos kilómetros del centro de Concordia y se caracteriza por su ambiente tranquilo,
+        la cercanía con espacios naturales y una comunidad muy unida. Sus calles y espacios verdes hacen que
+        sea un lugar elegido por familias que buscan un ritmo de vida más calmado cerca de la ciudad.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="section-head">
+        <div class="dot" aria-hidden="true"></div>
+        <h2>La Charita</h2>
+      </div>
+      <img src="charita.jpg" alt="La Charita - Villa Adela" class="foto">
+      <p>
+        La Charita es un paraje y sector conocido dentro de la zona de Villa Adela. Se ubica en las cercanías del arroyo Yuquerí Grande
+        y suele ser mencionado por vecinos como un punto de encuentro para paseos, reuniones al aire libre y actividades comunitarias.
+        A lo largo del tiempo, La Charita también ha sido objeto de historias y relatos locales que forman parte de la memoria del barrio,
+        lo que le da un carácter especial dentro de la identidad de Villa Adela.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="section-head">
+        <div class="dot" aria-hidden="true"></div>
+        <h2>Iglesia Nuestra Señora del Carmen</h2>
+      </div>
+      <img src="iglesia.jpg" alt="Iglesia Nuestra Señora del Carmen - Villa Adela" class="foto">
+      <p>
+        La Iglesia Nuestra Señora del Carmen es un centro religioso y de encuentro para las familias de Villa Adela.
+        Allí se celebran misas, bautismos, comuniones y distintas actividades comunitarias que refuerzan los lazos sociales.
+        Además de su función espiritual, la iglesia funciona como un espacio de apoyo y organización para las actividades del barrio.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="section-head">
+        <div class="dot" aria-hidden="true"></div>
+        <h2>Arrocera Dos Hermanos</h2>
+      </div>
+      <img src="arrocera.jpg" alt="Arrocera Dos Hermanos - Concordia" class="foto">
+      <p>
+        La Arrocera Dos Hermanos es una empresa con larga tradición en la región de Concordia dedicada a la producción y procesamiento de arroz.
+        Nacida del trabajo de dos emprendedores locales, con los años la arrocera se amplió y diversificó su producción (arroz, snacks, tostadas y derivados),
+        aportando empleo y dinamismo económico a la comunidad. Hoy es considerada parte importante del tejido productivo de la zona.
+      </p>
+    </article>
+
+    <section class="creadores">
+      <h3>Creadores de la página</h3>
+      <p>Alumnos de quinto año del Colegio San Roque:</p>
+      <p><strong>Bus Biasizo Santiago, Bautista Sandri y Benjamín Lemos Ojeda</strong></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 — Página informativa sobre Villa Adela, Concordia.</p>
+  </footer>
+</body>
+</html>
